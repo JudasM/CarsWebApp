@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddCarServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.AddCarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCarsServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.GetCarsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditCarServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.EditCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCarServlet</servlet-name>
+        <url-pattern>/AddCarServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCarsServlet</servlet-name>
+        <url-pattern>/GetCarsServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditCarServlet</servlet-name>
+        <url-pattern>/EditCarServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
